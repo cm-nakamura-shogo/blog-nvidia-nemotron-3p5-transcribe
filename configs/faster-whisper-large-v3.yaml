@@ -1,0 +1,17 @@
+id: faster-whisper-large-v3
+runner: faster_whisper
+model_id: Systran/faster-whisper-large-v3
+model_revision: edaa852ec7e145841d8ffdb056a99866b5f0a478
+upstream_model_id: openai/whisper-large-v3
+upstream_model_revision: 06f233fe06e710322aca913c1bc4249a0d71fce1
+compute_type: float16
+language: ja
+task: transcribe
+beam_size: 1
+temperature: 0.0
+without_timestamps: true
+vad_filter: false
+condition_on_previous_text: false
+batch_order: bucket
+warmup_samples: 8
+comparison_scope: main

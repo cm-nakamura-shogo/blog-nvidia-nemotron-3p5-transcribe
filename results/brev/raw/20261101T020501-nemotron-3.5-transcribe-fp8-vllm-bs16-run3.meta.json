@@ -1,0 +1,81 @@
+{
+  "accuracy": {
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.4123076923076923,
+    "files": 650,
+    "normalized_cer": 0.042605978926733644,
+    "normalized_cer_ge_10pct": {
+      "count": 80,
+      "rate": 0.12307692307692308
+    },
+    "normalized_cer_ge_20pct": {
+      "count": 22,
+      "rate": 0.033846153846153845
+    },
+    "normalized_cer_ge_50pct": {
+      "count": 1,
+      "rate": 0.0015384615384615385
+    },
+    "normalized_counts": {
+      "deletions": 261,
+      "errors": 1391,
+      "hits": 31526,
+      "insertions": 269,
+      "reference_characters": 32648,
+      "substitutions": 861
+    },
+    "raw_cer": 0.059092991296381125,
+    "raw_counts": {
+      "deletions": 668,
+      "errors": 2064,
+      "hits": 33246,
+      "insertions": 382,
+      "reference_characters": 34928,
+      "substitutions": 1014
+    },
+    "suspicious_repetition_count": 0,
+    "suspicious_repetition_rate": 0.0
+  },
+  "audio_hours_per_hour": 97.25344800881476,
+  "batch_order": "bucket",
+  "batch_size": 16,
+  "comparison_scope": "main",
+  "empty_hypotheses": 0,
+  "end_to_end_elapsed_sec": 87.51484059699942,
+  "experiment_id": "20261101T020501-nemotron-3.5-transcribe-fp8-vllm-bs16-run3",
+  "files_per_sec": 7.427311705830682,
+  "finish_reason_length": 0,
+  "fleurs_training_overlap_disclosed": true,
+  "gpu_inference_elapsed_sec": 87.51484059699942,
+  "hub_model_id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+  "latency": null,
+  "mamba_backend": "triton",
+  "model_id": "nemotron-3.5-transcribe-fp8-vllm",
+  "model_load_sec": null,
+  "model_revision": "2b6209f89bec0da576d69183bfdabb3b6c05ade2",
+  "model_weight_dtype": "fp8_e4m3",
+  "peak_vram_mib_nvidia_smi": 42449,
+  "precision": "fp8_modelopt",
+  "predictions": "results/raw/20261101T020501-nemotron-3.5-transcribe-fp8-vllm-bs16-run3.jsonl",
+  "repeat": 3,
+  "request_latency_all": {
+    "mean_sec": 2.1482494540707613,
+    "p50_sec": 2.11407404900001,
+    "p95_sec": 3.1183423515487445,
+    "p99_sec": 3.586513166689656
+  },
+  "request_mode": "concurrent",
+  "rtf": 0.010282411785640372,
+  "runtime": "vLLM OpenAI-compatible server",
+  "runtime_versions": {
+    "vllm": "0.32.0"
+  },
+  "speculative_decoding": "none",
+  "total_audio_sec": 8511.119999999994,
+  "total_files": 650,
+  "user_prompt": "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization; numbers in their standard written form. Output: transcript only.",
+  "vram_baseline_mib_nvidia_smi": 42449,
+  "vram_monitor": "NVML",
+  "vram_note": "vLLM preallocates KV cache by --gpu-memory-utilization",
+  "warmup_samples": 8
+}

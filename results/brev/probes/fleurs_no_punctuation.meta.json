@@ -1,0 +1,14 @@
+{
+  "concurrency": 16,
+  "elapsed_sec": 84.65095207200102,
+  "empty_outputs": 0,
+  "files": 650,
+  "finish_reason_length": 0,
+  "hub_model_id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+  "manifest": "manifests/fleurs-ja_jp-test.jsonl",
+  "max_tokens": 1024,
+  "model_revision": "2b6209f89bec0da576d69183bfdabb3b6c05ade2",
+  "probe": "fleurs_no_punctuation",
+  "system_prompt": "",
+  "user_prompt": "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: no punctuation; numbers in their standard written form. Output: transcript only."
+}

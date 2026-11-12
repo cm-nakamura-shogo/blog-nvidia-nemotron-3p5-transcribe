@@ -1,0 +1,79 @@
+{
+  "accuracy": {
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.36,
+    "files": 650,
+    "normalized_cer": 0.05936045086988483,
+    "normalized_cer_ge_10pct": {
+      "count": 106,
+      "rate": 0.16307692307692306
+    },
+    "normalized_cer_ge_20pct": {
+      "count": 43,
+      "rate": 0.06615384615384616
+    },
+    "normalized_cer_ge_50pct": {
+      "count": 4,
+      "rate": 0.006153846153846154
+    },
+    "normalized_counts": {
+      "deletions": 742,
+      "errors": 1938,
+      "hits": 31020,
+      "insertions": 310,
+      "reference_characters": 32648,
+      "substitutions": 886
+    },
+    "raw_cer": 0.09413650939074668,
+    "raw_counts": {
+      "deletions": 1748,
+      "errors": 3288,
+      "hits": 31997,
+      "insertions": 357,
+      "reference_characters": 34928,
+      "substitutions": 1183
+    },
+    "suspicious_repetition_count": 0,
+    "suspicious_repetition_rate": 0.0
+  },
+  "audio_hours_per_hour": 375.1540452429915,
+  "batch_order": "bucket",
+  "batch_size": 1,
+  "comparison_scope": "main",
+  "decoder_type": "rnnt",
+  "decoding_strategy": "greedy_batch",
+  "end_to_end_elapsed_sec": 22.687000468000406,
+  "experiment_id": "20261101T022142-parakeet-tdt-ctc-0.6b-ja-bs1-run2",
+  "files_per_sec": 28.650768571932325,
+  "fleurs_training_overlap_disclosed": false,
+  "gpu_inference_elapsed_sec": 22.673085322028783,
+  "hub_model_id": "nvidia/parakeet-tdt_ctc-0.6b-ja",
+  "latency": {
+    "mean_sec": 0.034881669726198127,
+    "p50_sec": 0.03393483699983335,
+    "p95_sec": 0.042115118600122514,
+    "p99_sec": 0.04591269446018485
+  },
+  "model_id": "parakeet-tdt-ctc-0.6b-ja",
+  "model_load_sec": 11.053922801998851,
+  "model_revision": "44edb27eea9317daf89333e75eb830db4b1cc298",
+  "model_weight_dtype": "float32",
+  "peak_allocated_mib_torch": 2502.8916015625,
+  "peak_reserved_mib_torch": 2610.0,
+  "peak_vram_mib_nvidia_smi": 3743,
+  "precision": "bf16_autocast",
+  "predictions": "results/raw/20261101T022142-parakeet-tdt-ctc-0.6b-ja-bs1-run2.jsonl",
+  "repeat": 2,
+  "rtf": 0.002665571683632756,
+  "runtime": "NVIDIA NeMo",
+  "runtime_versions": {
+    "nemo-toolkit": "3.1.0+e0a284b",
+    "torch": "2.11.0+cu129"
+  },
+  "total_audio_sec": 8511.119999999994,
+  "total_files": 650,
+  "transducer_type": "tdt",
+  "vram_baseline_mib_nvidia_smi": 3671,
+  "vram_monitor": "NVML",
+  "warmup_samples": 8
+}

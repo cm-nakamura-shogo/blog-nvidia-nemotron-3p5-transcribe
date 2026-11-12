@@ -1,0 +1,12 @@
+manifest: manifests/fleurs-ja_jp-test.jsonl
+batch_sizes: [1, 4, 8, 16, 32, 64]
+repeats: 3
+seed: 20260821
+configs:
+  - configs/faster-whisper-large-v3.yaml
+  - configs/faster-whisper-large-v3-turbo.yaml
+  - configs/kotoba-whisper-v2.2.yaml
+  - configs/parakeet-tdt-ctc-0.6b-ja.yaml
+  - configs/reazonspeech-k2-v2.yaml
+  - configs/nemotron-asr.yaml
+  - configs/nemotron-asr-offline-transformers.yaml

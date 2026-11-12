@@ -1,0 +1,19 @@
+id: nemotron-3.5-transcribe-fp8-vllm
+runner: vllm_openai
+model_id: nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
+model_revision: 2b6209f89bec0da576d69183bfdabb3b6c05ade2
+served_model_name: nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
+server_url: http://127.0.0.1:8000
+precision: fp8_modelopt
+model_weight_dtype: fp8_e4m3
+# L40Sではモデルカードの既定（MTP8）が使えないため無効（scripts/serve_nemotron_transcribe.sh参照）。
+speculative_decoding: none
+mamba_backend: triton
+# モデルカードの評価プロンプト（fleurs.asr）をそのまま使う。
+system_prompt: ""
+user_prompt: "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization; numbers in their standard written form. Output: transcript only."
+max_tokens: 1024
+batch_order: bucket
+warmup_samples: 8
+fleurs_training_overlap_disclosed: true
+comparison_scope: main

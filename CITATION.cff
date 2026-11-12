@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite this repository."
+title: "Nemotron 3.5 Transcribe Japanese evaluation on NVIDIA L40S"
+type: software
+authors:
+  - family-names: Nakamura
+    given-names: Shogo
+date-released: 2026-11-12
+license: MIT

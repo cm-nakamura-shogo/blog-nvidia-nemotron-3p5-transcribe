@@ -1,0 +1,8 @@
+model_id,display_name,runtime,precision,comparison_scope,runs,batch_sizes,best_batch_size,best_batch_runs,audio_hours_per_hour,rtf,files_per_sec,peak_vram_mib_nvidia_smi
+parakeet-tdt-ctc-0.6b-ja,Parakeet TDT 0.6B Japanese,NVIDIA NeMo,bf16_autocast,main,18,"[1, 4, 8, 16, 32, 64]",32,3,2482.356466327904,0.0004028430298245112,189.57924493053073,5629.0
+nemotron-3.5-asr-offline-transformers,Nemotron offline / Transformers,Transformers offline RNNT,bf16_autocast,main,18,"[1, 4, 8, 16, 32, 64]",64,3,939.18039529146,0.0010647581710749676,71.72584300767106,18467.0
+nemotron-3.5-asr-streaming-0.6b,Nemotron streaming / NeMo (ref.),NVIDIA NeMo,bf16_autocast,streaming_reference,18,"[1, 4, 8, 16, 32, 64]",64,3,573.6809569913769,0.0017431291518624195,43.812403308189204,7301.0
+kotoba-whisper-v2.2,Kotoba-Whisper v2.2,Transformers,float16,main,18,"[1, 4, 8, 16, 32, 64]",64,3,457.3000765116381,0.0021867479394015593,34.92431662725528,6661.0
+reazonspeech-k2-v2,ReazonSpeech K2 v2,sherpa-onnx CUDA,float32,main,18,"[1, 4, 8, 16, 32, 64]",32,3,308.83747806448383,0.003237948989439697,23.58612741236343,22661.0
+faster-whisper-large-v3-turbo,Whisper large-v3-turbo,faster-whisper/CTranslate2,float16,main,18,"[1, 4, 8, 16, 32, 64]",64,3,210.30913125962246,0.0047549052863782686,16.06145082183716,11369.0
+faster-whisper-large-v3,Whisper large-v3,faster-whisper/CTranslate2,float16,main,18,"[1, 4, 8, 16, 32, 64]",64,3,129.64837436327505,0.00771317037264191,9.90133417648075,20617.0

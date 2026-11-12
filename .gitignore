@@ -1,0 +1,25 @@
+work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+manifests/*.jsonl
+results/raw/*
+results/accuracy/*
+results/smoke*/
+results/status*/
+results/invalid/
+results/quarantine/
+results/*.log
+results/*.pid
+results/aggregated/all-runs.csv
+results/aggregated/verification.json
+!results/raw/.gitkeep
+
+# 発話ごとの認識結果とログは公開しない（容量と再配布範囲のため）
+results/brev/**/*.jsonl
+results/brev/**/*.log
+results/brev/*.pid
+results/brev/smoke*/
+results/brev/status*/logs/
+results/brev/aggregated/
+results/brev/status-smoke*/

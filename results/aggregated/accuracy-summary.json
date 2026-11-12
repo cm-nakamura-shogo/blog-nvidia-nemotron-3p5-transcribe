@@ -1,0 +1,212 @@
+[
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "Whisper large-v3",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.36,
+    "model_id": "faster-whisper-large-v3",
+    "normalized_cer": 0.04487258024993874,
+    "normalized_cer_ge_20pct_rate": 0.023076923076923078,
+    "normalized_cer_ge_50pct_rate": 0.0,
+    "normalized_cer_max": 0.04487258024993874,
+    "normalized_cer_min": 0.04487258024993874,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 281.0,
+    "normalized_insertions": 165.0,
+    "normalized_substitutions": 1019.0,
+    "precision": "float16",
+    "raw_cer": 0.07506871278057718,
+    "raw_cer_max": 0.07506871278057718,
+    "raw_cer_min": 0.07506871278057718,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "faster-whisper/CTranslate2",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "Whisper large-v3-turbo",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.3292307692307692,
+    "model_id": "faster-whisper-large-v3-turbo",
+    "normalized_cer": 0.048119333496691986,
+    "normalized_cer_ge_20pct_rate": 0.021538461538461538,
+    "normalized_cer_ge_50pct_rate": 0.0,
+    "normalized_cer_max": 0.048119333496691986,
+    "normalized_cer_min": 0.048119333496691986,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 303.0,
+    "normalized_insertions": 161.0,
+    "normalized_substitutions": 1107.0,
+    "precision": "float16",
+    "raw_cer": 0.081481905634448,
+    "raw_cer_max": 0.081481905634448,
+    "raw_cer_min": 0.081481905634448,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "faster-whisper/CTranslate2",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "Parakeet TDT 0.6B Japanese",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.36,
+    "model_id": "parakeet-tdt-ctc-0.6b-ja",
+    "normalized_cer": 0.05936045086988483,
+    "normalized_cer_ge_20pct_rate": 0.06615384615384616,
+    "normalized_cer_ge_50pct_rate": 0.006153846153846154,
+    "normalized_cer_max": 0.05936045086988483,
+    "normalized_cer_min": 0.05936045086988483,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 742.0,
+    "normalized_insertions": 310.0,
+    "normalized_substitutions": 886.0,
+    "precision": "bf16_autocast",
+    "raw_cer": 0.09413650939074668,
+    "raw_cer_max": 0.09413650939074668,
+    "raw_cer_min": 0.09413650939074668,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "NVIDIA NeMo",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "Kotoba-Whisper v2.2",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.2353846153846154,
+    "model_id": "kotoba-whisper-v2.2",
+    "normalized_cer": 0.06919259985297721,
+    "normalized_cer_ge_20pct_rate": 0.05076923076923077,
+    "normalized_cer_ge_50pct_rate": 0.004615384615384616,
+    "normalized_cer_max": 0.06919259985297721,
+    "normalized_cer_min": 0.06919259985297721,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 550.0,
+    "normalized_insertions": 279.0,
+    "normalized_substitutions": 1430.0,
+    "precision": "float16",
+    "raw_cer": 0.12270957398076042,
+    "raw_cer_max": 0.12270957398076042,
+    "raw_cer_min": 0.12270957398076042,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "Transformers",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "ReazonSpeech K2 v2",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.24,
+    "model_id": "reazonspeech-k2-v2",
+    "normalized_cer": 0.09400269541778976,
+    "normalized_cer_ge_20pct_rate": 0.12,
+    "normalized_cer_ge_50pct_rate": 0.02,
+    "normalized_cer_max": 0.09400269541778976,
+    "normalized_cer_min": 0.09400269541778976,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 1311.0,
+    "normalized_insertions": 298.0,
+    "normalized_substitutions": 1460.0,
+    "precision": "float32",
+    "raw_cer": 0.1501087952359139,
+    "raw_cer_max": 0.1501087952359139,
+    "raw_cer_min": 0.1501087952359139,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "sherpa-onnx CUDA",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "main",
+    "display_name": "Nemotron offline / Transformers",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.06,
+    "model_id": "nemotron-3.5-asr-offline-transformers",
+    "normalized_cer": 0.1331168831168831,
+    "normalized_cer_ge_20pct_rate": 0.23692307692307693,
+    "normalized_cer_ge_50pct_rate": 0.009230769230769232,
+    "normalized_cer_max": 0.1331168831168831,
+    "normalized_cer_min": 0.1331168831168831,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 776.0,
+    "normalized_insertions": 390.0,
+    "normalized_substitutions": 3180.0,
+    "precision": "bf16_autocast",
+    "raw_cer": 0.1640517636280348,
+    "raw_cer_max": 0.1640517636280348,
+    "raw_cer_min": 0.1640517636280348,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "Transformers offline RNNT",
+    "suspicious_repetition_count": 0.0
+  },
+  {
+    "batch_sizes": [
+      1
+    ],
+    "comparison_scope": "streaming_reference",
+    "display_name": "Nemotron streaming / NeMo (ref.)",
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.05076923076923077,
+    "model_id": "nemotron-3.5-asr-streaming-0.6b",
+    "normalized_cer": 0.13455648125459446,
+    "normalized_cer_ge_20pct_rate": 0.24461538461538462,
+    "normalized_cer_ge_50pct_rate": 0.007692307692307693,
+    "normalized_cer_max": 0.13455648125459446,
+    "normalized_cer_min": 0.13455648125459446,
+    "normalized_cer_std": 0.0,
+    "normalized_deletions": 822.0,
+    "normalized_insertions": 383.0,
+    "normalized_substitutions": 3188.0,
+    "precision": "bf16_autocast",
+    "raw_cer": 0.1641949152542373,
+    "raw_cer_max": 0.1641949152542373,
+    "raw_cer_min": 0.1641949152542373,
+    "raw_cer_std": 0.0,
+    "repeat_ids": [
+      1
+    ],
+    "runs": 1,
+    "runtime": "NVIDIA NeMo",
+    "suspicious_repetition_count": 0.0
+  }
+]

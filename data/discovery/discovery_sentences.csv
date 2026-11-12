@@ -1,0 +1,61 @@
+id,category,target_term,spoken_hint,reference_text,role
+D001,model,Nemotron,ネモトロン,Nemotron 3.5 ASRを使って日本語音声を認識します。,discovery
+D002,model,Nemotron,ネモトロン,今回の検証ではNemotronの認識精度を比較します。,discovery
+D003,framework,NeMo,ネモ,NeMoを使って音声認識モデルを学習します。,discovery
+D004,framework,NeMo,ネモ,学習にはNVIDIA NeMo Frameworkを利用しました。,discovery
+D005,product,Riva,リーヴァ,NVIDIA Rivaで音声認識サービスを構築します。,discovery
+D006,product,Riva,リーヴァ,RivaのストリーミングAPIを呼び出しました。,discovery
+D007,model,Parakeet,パラキート,ParakeetとNemotronの認識結果を比較します。,discovery
+D008,model,Parakeet,パラキート,Parakeetは音声認識用のモデルファミリーです。,discovery
+D009,model,Canary,カナリー,Canaryを使って音声翻訳を実行します。,discovery
+D010,model,Canary,カナリー,多言語音声の処理にはCanaryを利用しました。,discovery
+D011,model,Magpie TTS,マグパイ・ティーティーエス,Magpie TTSで日本語の音声を合成します。,discovery
+D012,model,Magpie TTS,マグパイ・ティーティーエス,応答音声の生成にはMagpie TTSを使います。,discovery
+D013,model,PersonaPlex,ペルソナプレックス,PersonaPlexはリアルタイム音声対話に対応します。,discovery
+D014,model,PersonaPlex,ペルソナプレックス,PersonaPlexを使って割り込み可能な対話を試します。,discovery
+D015,model,VoiceChat,ボイスチャット,VoiceChatは音声入力から応答音声を生成します。,discovery
+D016,model,VoiceChat,ボイスチャット,今回はVoiceChatのツール呼び出しを検証します。,discovery
+D017,architecture,FastConformer,ファストコンフォーマー,FastConformerは音声の特徴を効率よく処理します。,discovery
+D018,architecture,FastConformer,ファストコンフォーマー,エンコーダーにはFastConformerが採用されています。,discovery
+D019,architecture,RNNT,アールエヌエヌティー,RNNTはストリーミング音声認識に適したデコーダーです。,discovery
+D020,architecture,RNNT,アールエヌエヌティー,今回はRNNTの貪欲デコーディングを使用します。,discovery
+D021,architecture,TDT,ティーディーティー,TDTモデルの推論速度を測定しました。,discovery
+D022,architecture,TDT,ティーディーティー,ParakeetにはTDTを採用したモデルがあります。,discovery
+D023,architecture,CTC,シーティーシー,CTCの出力とRNNTの出力を比較します。,discovery
+D024,architecture,CTC,シーティーシー,このモデルにはCTCのデコーダーが含まれています。,discovery
+D025,architecture,Cache-Aware Streaming,キャッシュ・アウェア・ストリーミング,Cache-Aware Streamingでは過去の計算結果を再利用します。,discovery
+D026,architecture,Cache-Aware Streaming,キャッシュ・アウェア・ストリーミング,低遅延化のためにCache-Aware Streamingを利用します。,discovery
+D027,training,SpecAugment,スペックオーオーギュメント,SpecAugmentを使って音声モデルの汎化性能を高めます。,discovery
+D028,training,SpecAugment,スペックオーオーギュメント,学習時のデータ拡張にはSpecAugmentを設定しました。,discovery
+D029,platform,CUDA,クーダ,CUDAを利用してGPU上で学習します。,discovery
+D030,platform,CUDA,クーダ,実行環境のCUDAバージョンを確認しました。,discovery
+D031,platform,cuDNN,クーディーエヌエヌ,cuDNNはニューラルネットワークの計算を高速化します。,discovery
+D032,platform,cuDNN,クーディーエヌエヌ,PyTorchが参照するcuDNNのバージョンを確認します。,discovery
+D033,platform,TensorRT,テンソルアールティー,TensorRTを使って推論処理を最適化します。,discovery
+D034,platform,TensorRT,テンソルアールティー,学習後のモデルをTensorRT向けに変換します。,discovery
+D035,platform,Triton,トリトン,Triton Inference Serverにモデルを配置します。,discovery
+D036,platform,Triton,トリトン,Tritonから複数の推論リクエストを処理します。,discovery
+D037,platform,NIM,ニム,NIMを使って音声認識モデルをデプロイします。,discovery
+D038,platform,NIM,ニム,NVIDIA NIMには推論環境がパッケージされています。,discovery
+D039,platform,NGC,エヌジーシー,NGCから学習用のコンテナを取得します。,discovery
+D040,platform,NGC,エヌジーシー,必要なモデルはNGCカタログで確認できます。,discovery
+D041,hardware,DGX,ディージーエックス,DGX上で音声認識モデルを学習します。,discovery
+D042,hardware,DGX,ディージーエックス,複数のGPUを搭載したDGXを使用しました。,discovery
+D043,hardware,NVLink,エヌブイリンク,NVLinkを介してGPU間でデータを転送します。,discovery
+D044,hardware,NVLink,エヌブイリンク,NVLinkの帯域幅が学習性能に影響します。,discovery
+D045,data,Lhotse,ローツェ,Lhotseを使って音声データを効率よく読み込みます。,discovery
+D046,data,Lhotse,ローツェ,NeMoのデータローダーでLhotseを有効にします。,discovery
+D047,data,ReazonSpeech,リーゾンスピーチ,ReazonSpeechには大規模な日本語音声が収録されています。,discovery
+D048,data,ReazonSpeech,リーゾンスピーチ,日本語の評価にはReazonSpeechの利用を検討します。,discovery
+D049,data,FLEURS,フルール,FLEURSの日本語データを評価に使用します。,discovery
+D050,data,FLEURS,フルール,多言語音声データセットのFLEURSを取得しました。,discovery
+D051,metric,CER,シーイーアール,日本語の認識精度はCERで評価します。,discovery
+D052,metric,CER,シーイーアール,学習後にCERがどれだけ改善したか確認します。,discovery
+D053,metric,WER,ダブリューイーアール,英語の認識精度はWERで評価します。,discovery
+D054,metric,WER,ダブリューイーアール,ベースモデルと学習後モデルのWERを比較します。,discovery
+C001,control,,なし,会議のメモをローカルに保存しました。,negative_control
+C002,control,,なし,部屋の中は空だと確認しました。,negative_control
+C003,control,,なし,オンライン会議の映像に少しラグがあります。,negative_control
+C004,control,,なし,庭で黄色いカナリアが鳴いています。,negative_control
+C005,control,,なし,登山隊はローツェの山頂を目指しました。,negative_control
+C006,control,,なし,チーム内の情報共有を円滑にします。,negative_control

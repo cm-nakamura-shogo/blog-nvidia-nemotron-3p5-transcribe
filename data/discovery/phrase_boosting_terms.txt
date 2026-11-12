@@ -1,0 +1,25 @@
+Nemotron
+NeMo
+Riva
+Parakeet
+Canary
+Magpie TTS
+PersonaPlex
+VoiceChat
+FastConformer
+RNNT
+TDT
+Cache-Aware Streaming
+SpecAugment
+CUDA
+cuDNN
+TensorRT
+Triton
+NIM
+NGC
+NVLink
+Lhotse
+ReazonSpeech
+FLEURS
+CER
+WER

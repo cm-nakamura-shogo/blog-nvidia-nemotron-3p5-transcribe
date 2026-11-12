@@ -1,0 +1,9 @@
+{
+  "bleu": 22.561025436787162,
+  "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+  "chrf": 53.556239742384236,
+  "files": 650,
+  "predictions": "results/probes/st_ja_to_en.jsonl",
+  "scored_files": 650,
+  "target_lang": "en"
+}

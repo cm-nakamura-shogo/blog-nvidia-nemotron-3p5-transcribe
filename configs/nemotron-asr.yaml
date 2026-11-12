@@ -1,0 +1,15 @@
+id: nemotron-3.5-asr-streaming-0.6b
+runner: nemo_streaming
+model_id: nvidia/nemotron-3.5-asr-streaming-0.6b
+model_revision: 1c8deaecc64b91f034d73e08dd8b64625eb3395d
+precision: bf16_autocast
+model_weight_dtype: float32
+target_lang: ja-JP
+att_context_size: [56, 13]
+chunk_size_ms: 1120
+decoder_type: rnnt
+strip_lang_tags: true
+pad_and_drop_preencoded: true
+batch_order: bucket
+warmup_samples: 8
+comparison_scope: streaming_reference

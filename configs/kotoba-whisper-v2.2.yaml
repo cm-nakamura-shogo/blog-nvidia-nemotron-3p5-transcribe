@@ -1,0 +1,18 @@
+id: kotoba-whisper-v2.2
+runner: transformers_whisper
+model_id: kotoba-tech/kotoba-whisper-v2.2
+model_revision: 9d33482a0eb9b57f1ad80708e8ac5538246d8355
+precision: float16
+attn_implementation: sdpa
+language: ja
+task: transcribe
+num_beams: 1
+do_sample: false
+# Whisper reserves four decoder positions for the start/language/task tokens.
+max_new_tokens: 444
+batch_order: bucket
+warmup_samples: 8
+use_custom_pipeline: false
+external_punctuation: false
+diarization: false
+comparison_scope: main

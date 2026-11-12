@@ -1,0 +1,33 @@
+# プロンプト制御と翻訳の確認用。文言はモデルカードの推奨プロンプト表に合わせる。
+probes:
+  # --- 専門用語（8/21記事の録音60文、用語なしの対照6文を含む） ---
+  # 用語リストは8/21記事のPhrase Boostingと同じ25語（台本のCTC・DGXは含まない）で比較条件を揃える。
+  terms_verbatim:
+    manifest: data/discovery/discovery_manifest.jsonl
+    user_prompt: "Audio transcription. Language: as spoken. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization. Output: transcript only."
+  terms_context:
+    manifest: data/discovery/discovery_manifest.jsonl
+    user_prompt: "Transcribe with punctuation and capitalization. Context terms: Nemotron, NeMo, Riva, Parakeet, Canary, Magpie TTS, PersonaPlex, VoiceChat, FastConformer, RNNT, TDT, Cache-Aware Streaming, SpecAugment, CUDA, cuDNN, TensorRT, Triton, NIM, NGC, NVLink, Lhotse, ReazonSpeech, FLEURS, CER, WER."
+  # 文言の違いと用語ヒントの効果を切り分けるため、verbatimに用語だけを足した版
+  terms_verbatim_context:
+    manifest: data/discovery/discovery_manifest.jsonl
+    user_prompt: "Audio transcription. Language: as spoken. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization. Output: transcript only. Context terms: Nemotron, NeMo, Riva, Parakeet, Canary, Magpie TTS, PersonaPlex, VoiceChat, FastConformer, RNNT, TDT, Cache-Aware Streaming, SpecAugment, CUDA, cuDNN, TensorRT, Triton, NIM, NGC, NVLink, Lhotse, ReazonSpeech, FLEURS, CER, WER."
+
+  # --- 表記の制御（FLEURS ja test） ---
+  fleurs_numbers_written:
+    manifest: manifests/fleurs-ja_jp-test.jsonl
+    user_prompt: "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization; numbers in their standard written form. Output: transcript only."
+  fleurs_numbers_spoken:
+    manifest: manifests/fleurs-ja_jp-test.jsonl
+    user_prompt: "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization; numbers as spoken words. Output: transcript only."
+  fleurs_no_punctuation:
+    manifest: manifests/fleurs-ja_jp-test.jsonl
+    user_prompt: "Audio transcription. Language: as spoken, in its standard writing system. Wording: verbatim, including fillers and repetitions. Formatting: no punctuation; numbers in their standard written form. Output: transcript only."
+
+  # --- 翻訳（FLEURS test。同じfleurs_idの他言語の書き起こしを参照訳にする） ---
+  st_ja_to_en:
+    manifest: manifests/fleurs-ja_jp-test.jsonl
+    user_prompt: "Please translate the given speech to English."
+  st_en_to_ja:
+    manifest: manifests/fleurs-en_us-test.jsonl
+    user_prompt: "Please translate the given speech to Japanese."

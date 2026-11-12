@@ -1,0 +1,60 @@
+{"sample_id": "D001", "audio_filepath": "../../work/recordings/discovery/D001.wav", "duration_sec": 10.579625, "reference": "Nemotron 3.5 ASRを使って日本語音声を認識します。", "target_term": "Nemotron", "role": "discovery"}
+{"sample_id": "D002", "audio_filepath": "../../work/recordings/discovery/D002.wav", "duration_sec": 8.601625, "reference": "今回の検証ではNemotronの認識精度を比較します。", "target_term": "Nemotron", "role": "discovery"}
+{"sample_id": "D003", "audio_filepath": "../../work/recordings/discovery/D003.wav", "duration_sec": 7.497625, "reference": "NeMoを使って音声認識モデルを学習します。", "target_term": "NeMo", "role": "discovery"}
+{"sample_id": "D004", "audio_filepath": "../../work/recordings/discovery/D004.wav", "duration_sec": 8.877625, "reference": "学習にはNVIDIA NeMo Frameworkを利用しました。", "target_term": "NeMo", "role": "discovery"}
+{"sample_id": "D005", "audio_filepath": "../../work/recordings/discovery/D005.wav", "duration_sec": 8.900625, "reference": "NVIDIA Rivaで音声認識サービスを構築します。", "target_term": "Riva", "role": "discovery"}
+{"sample_id": "D006", "audio_filepath": "../../work/recordings/discovery/D006.wav", "duration_sec": 6.991625, "reference": "RivaのストリーミングAPIを呼び出しました。", "target_term": "Riva", "role": "discovery"}
+{"sample_id": "D007", "audio_filepath": "../../work/recordings/discovery/D007.wav", "duration_sec": 7.911625, "reference": "ParakeetとNemotronの認識結果を比較します。", "target_term": "Parakeet", "role": "discovery"}
+{"sample_id": "D008", "audio_filepath": "../../work/recordings/discovery/D008.wav", "duration_sec": 7.589625, "reference": "Parakeetは音声認識用のモデルファミリーです。", "target_term": "Parakeet", "role": "discovery"}
+{"sample_id": "D009", "audio_filepath": "../../work/recordings/discovery/D009.wav", "duration_sec": 6.899625, "reference": "Canaryを使って音声翻訳を実行します。", "target_term": "Canary", "role": "discovery"}
+{"sample_id": "D010", "audio_filepath": "../../work/recordings/discovery/D010.wav", "duration_sec": 8.095625, "reference": "多言語音声の処理にはCanaryを利用しました。", "target_term": "Canary", "role": "discovery"}
+{"sample_id": "D011", "audio_filepath": "../../work/recordings/discovery/D011.wav", "duration_sec": 8.187625, "reference": "Magpie TTSで日本語の音声を合成します。", "target_term": "Magpie TTS", "role": "discovery"}
+{"sample_id": "D012", "audio_filepath": "../../work/recordings/discovery/D012.wav", "duration_sec": 8.555625, "reference": "応答音声の生成にはMagpie TTSを使います。", "target_term": "Magpie TTS", "role": "discovery"}
+{"sample_id": "D013", "audio_filepath": "../../work/recordings/discovery/D013.wav", "duration_sec": 8.877625, "reference": "PersonaPlexはリアルタイム音声対話に対応します。", "target_term": "PersonaPlex", "role": "discovery"}
+{"sample_id": "D014", "audio_filepath": "../../work/recordings/discovery/D014.wav", "duration_sec": 9.130625, "reference": "PersonaPlexを使って割り込み可能な対話を試します。", "target_term": "PersonaPlex", "role": "discovery"}
+{"sample_id": "D015", "audio_filepath": "../../work/recordings/discovery/D015.wav", "duration_sec": 8.440625, "reference": "VoiceChatは音声入力から応答音声を生成します。", "target_term": "VoiceChat", "role": "discovery"}
+{"sample_id": "D016", "audio_filepath": "../../work/recordings/discovery/D016.wav", "duration_sec": 8.049625, "reference": "今回はVoiceChatのツール呼び出しを検証します。", "target_term": "VoiceChat", "role": "discovery"}
+{"sample_id": "D017", "audio_filepath": "../../work/recordings/discovery/D017.wav", "duration_sec": 8.509625, "reference": "FastConformerは音声の特徴を効率よく処理します。", "target_term": "FastConformer", "role": "discovery"}
+{"sample_id": "D018", "audio_filepath": "../../work/recordings/discovery/D018.wav", "duration_sec": 7.773625, "reference": "エンコーダーにはFastConformerが採用されています。", "target_term": "FastConformer", "role": "discovery"}
+{"sample_id": "D019", "audio_filepath": "../../work/recordings/discovery/D019.wav", "duration_sec": 8.256625, "reference": "RNNTはストリーミング音声認識に適したデコーダーです。", "target_term": "RNNT", "role": "discovery"}
+{"sample_id": "D020", "audio_filepath": "../../work/recordings/discovery/D020.wav", "duration_sec": 7.819625, "reference": "今回はRNNTの貪欲デコーディングを使用します。", "target_term": "RNNT", "role": "discovery"}
+{"sample_id": "D021", "audio_filepath": "../../work/recordings/discovery/D021.wav", "duration_sec": 8.026625, "reference": "TDTモデルの推論速度を測定しました。", "target_term": "TDT", "role": "discovery"}
+{"sample_id": "D022", "audio_filepath": "../../work/recordings/discovery/D022.wav", "duration_sec": 7.819625, "reference": "ParakeetにはTDTを採用したモデルがあります。", "target_term": "TDT", "role": "discovery"}
+{"sample_id": "D023", "audio_filepath": "../../work/recordings/discovery/D023.wav", "duration_sec": 8.831625, "reference": "CTCの出力とRNNTの出力を比較します。", "target_term": "CTC", "role": "discovery"}
+{"sample_id": "D024", "audio_filepath": "../../work/recordings/discovery/D024.wav", "duration_sec": 7.865625, "reference": "このモデルにはCTCのデコーダーが含まれています。", "target_term": "CTC", "role": "discovery"}
+{"sample_id": "D025", "audio_filepath": "../../work/recordings/discovery/D025.wav", "duration_sec": 7.865625, "reference": "Cache-Aware Streamingでは過去の計算結果を再利用します。", "target_term": "Cache-Aware Streaming", "role": "discovery"}
+{"sample_id": "D026", "audio_filepath": "../../work/recordings/discovery/D026.wav", "duration_sec": 8.739625, "reference": "低遅延化のためにCache-Aware Streamingを利用します。", "target_term": "Cache-Aware Streaming", "role": "discovery"}
+{"sample_id": "D027", "audio_filepath": "../../work/recordings/discovery/D027.wav", "duration_sec": 8.624625, "reference": "SpecAugmentを使って音声モデルの汎化性能を高めます。", "target_term": "SpecAugment", "role": "discovery"}
+{"sample_id": "D028", "audio_filepath": "../../work/recordings/discovery/D028.wav", "duration_sec": 8.808625, "reference": "学習時のデータ拡張にはSpecAugmentを設定しました。", "target_term": "SpecAugment", "role": "discovery"}
+{"sample_id": "D029", "audio_filepath": "../../work/recordings/discovery/D029.wav", "duration_sec": 7.244625, "reference": "CUDAを利用してGPU上で学習します。", "target_term": "CUDA", "role": "discovery"}
+{"sample_id": "D030", "audio_filepath": "../../work/recordings/discovery/D030.wav", "duration_sec": 7.198625, "reference": "実行環境のCUDAバージョンを確認しました。", "target_term": "CUDA", "role": "discovery"}
+{"sample_id": "D031", "audio_filepath": "../../work/recordings/discovery/D031.wav", "duration_sec": 8.693625, "reference": "cuDNNはニューラルネットワークの計算を高速化します。", "target_term": "cuDNN", "role": "discovery"}
+{"sample_id": "D032", "audio_filepath": "../../work/recordings/discovery/D032.wav", "duration_sec": 8.647625, "reference": "PyTorchが参照するcuDNNのバージョンを確認します。", "target_term": "cuDNN", "role": "discovery"}
+{"sample_id": "D033", "audio_filepath": "../../work/recordings/discovery/D033.wav", "duration_sec": 8.532625, "reference": "TensorRTを使って推論処理を最適化します。", "target_term": "TensorRT", "role": "discovery"}
+{"sample_id": "D034", "audio_filepath": "../../work/recordings/discovery/D034.wav", "duration_sec": 7.888625, "reference": "学習後のモデルをTensorRT向けに変換します。", "target_term": "TensorRT", "role": "discovery"}
+{"sample_id": "D035", "audio_filepath": "../../work/recordings/discovery/D035.wav", "duration_sec": 6.945625, "reference": "Triton Inference Serverにモデルを配置します。", "target_term": "Triton", "role": "discovery"}
+{"sample_id": "D036", "audio_filepath": "../../work/recordings/discovery/D036.wav", "duration_sec": 6.715625, "reference": "Tritonから複数の推論リクエストを処理します。", "target_term": "Triton", "role": "discovery"}
+{"sample_id": "D037", "audio_filepath": "../../work/recordings/discovery/D037.wav", "duration_sec": 6.600625, "reference": "NIMを使って音声認識モデルをデプロイします。", "target_term": "NIM", "role": "discovery"}
+{"sample_id": "D038", "audio_filepath": "../../work/recordings/discovery/D038.wav", "duration_sec": 6.370625, "reference": "NVIDIA NIMには推論環境がパッケージされています。", "target_term": "NIM", "role": "discovery"}
+{"sample_id": "D039", "audio_filepath": "../../work/recordings/discovery/D039.wav", "duration_sec": 6.600625, "reference": "NGCから学習用のコンテナを取得します。", "target_term": "NGC", "role": "discovery"}
+{"sample_id": "D040", "audio_filepath": "../../work/recordings/discovery/D040.wav", "duration_sec": 6.830625, "reference": "必要なモデルはNGCカタログで確認できます。", "target_term": "NGC", "role": "discovery"}
+{"sample_id": "D041", "audio_filepath": "../../work/recordings/discovery/D041.wav", "duration_sec": 7.704625, "reference": "DGX上で音声認識モデルを学習します。", "target_term": "DGX", "role": "discovery"}
+{"sample_id": "D042", "audio_filepath": "../../work/recordings/discovery/D042.wav", "duration_sec": 7.773625, "reference": "複数のGPUを搭載したDGXを使用しました。", "target_term": "DGX", "role": "discovery"}
+{"sample_id": "D043", "audio_filepath": "../../work/recordings/discovery/D043.wav", "duration_sec": 8.072625, "reference": "NVLinkを介してGPU間でデータを転送します。", "target_term": "NVLink", "role": "discovery"}
+{"sample_id": "D044", "audio_filepath": "../../work/recordings/discovery/D044.wav", "duration_sec": 7.359625, "reference": "NVLinkの帯域幅が学習性能に影響します。", "target_term": "NVLink", "role": "discovery"}
+{"sample_id": "D045", "audio_filepath": "../../work/recordings/discovery/D045.wav", "duration_sec": 6.876625, "reference": "Lhotseを使って音声データを効率よく読み込みます。", "target_term": "Lhotse", "role": "discovery"}
+{"sample_id": "D046", "audio_filepath": "../../work/recordings/discovery/D046.wav", "duration_sec": 7.428625, "reference": "NeMoのデータローダーでLhotseを有効にします。", "target_term": "Lhotse", "role": "discovery"}
+{"sample_id": "D047", "audio_filepath": "../../work/recordings/discovery/D047.wav", "duration_sec": 8.164625, "reference": "ReazonSpeechには大規模な日本語音声が収録されています。", "target_term": "ReazonSpeech", "role": "discovery"}
+{"sample_id": "D048", "audio_filepath": "../../work/recordings/discovery/D048.wav", "duration_sec": 8.095625, "reference": "日本語の評価にはReazonSpeechの利用を検討します。", "target_term": "ReazonSpeech", "role": "discovery"}
+{"sample_id": "D049", "audio_filepath": "../../work/recordings/discovery/D049.wav", "duration_sec": 7.635625, "reference": "FLEURSの日本語データを評価に使用します。", "target_term": "FLEURS", "role": "discovery"}
+{"sample_id": "D050", "audio_filepath": "../../work/recordings/discovery/D050.wav", "duration_sec": 8.532625, "reference": "多言語音声データセットのFLEURSを取得しました。", "target_term": "FLEURS", "role": "discovery"}
+{"sample_id": "D051", "audio_filepath": "../../work/recordings/discovery/D051.wav", "duration_sec": 7.658625, "reference": "日本語の認識精度はCERで評価します。", "target_term": "CER", "role": "discovery"}
+{"sample_id": "D052", "audio_filepath": "../../work/recordings/discovery/D052.wav", "duration_sec": 8.348625, "reference": "学習後にCERがどれだけ改善したか確認します。", "target_term": "CER", "role": "discovery"}
+{"sample_id": "D053", "audio_filepath": "../../work/recordings/discovery/D053.wav", "duration_sec": 7.566625, "reference": "英語の認識精度はWERで評価します。", "target_term": "WER", "role": "discovery"}
+{"sample_id": "D054", "audio_filepath": "../../work/recordings/discovery/D054.wav", "duration_sec": 8.578625, "reference": "ベースモデルと学習後モデルのWERを比較します。", "target_term": "WER", "role": "discovery"}
+{"sample_id": "C001", "audio_filepath": "../../work/recordings/discovery/C001.wav", "duration_sec": 5.979625, "reference": "会議のメモをローカルに保存しました。", "target_term": "", "role": "negative_control"}
+{"sample_id": "C002", "audio_filepath": "../../work/recordings/discovery/C002.wav", "duration_sec": 6.002625, "reference": "部屋の中は空だと確認しました。", "target_term": "", "role": "negative_control"}
+{"sample_id": "C003", "audio_filepath": "../../work/recordings/discovery/C003.wav", "duration_sec": 6.623625, "reference": "オンライン会議の映像に少しラグがあります。", "target_term": "", "role": "negative_control"}
+{"sample_id": "C004", "audio_filepath": "../../work/recordings/discovery/C004.wav", "duration_sec": 6.163625, "reference": "庭で黄色いカナリアが鳴いています。", "target_term": "", "role": "negative_control"}
+{"sample_id": "C005", "audio_filepath": "../../work/recordings/discovery/C005.wav", "duration_sec": 6.600625, "reference": "登山隊はローツェの山頂を目指しました。", "target_term": "", "role": "negative_control"}
+{"sample_id": "C006", "audio_filepath": "../../work/recordings/discovery/C006.wav", "duration_sec": 7.405625, "reference": "チーム内の情報共有を円滑にします。", "target_term": "", "role": "negative_control"}

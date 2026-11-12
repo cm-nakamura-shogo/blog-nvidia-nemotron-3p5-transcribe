@@ -1,0 +1,12 @@
+{
+  "dataset_config": "ja_jp",
+  "dataset_id": "google/fleurs",
+  "dataset_revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "dataset_split": "test",
+  "files": 650,
+  "license": "CC-BY-4.0",
+  "manifest": "/home/ubuntu/workspace/asr-benchmark/manifests/fleurs-ja_jp-test.jsonl",
+  "sample_id_scheme": "ja_jp-test-{dataset_index:04d}-id-{fleurs_id:05d}",
+  "sample_rate": 16000,
+  "total_audio_sec": 8511.119999999997
+}

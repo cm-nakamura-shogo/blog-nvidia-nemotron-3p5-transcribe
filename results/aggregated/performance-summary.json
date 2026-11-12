@@ -1,0 +1,156 @@
+[
+  {
+    "audio_hours_per_hour": 2482.356466327904,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 32,
+    "comparison_scope": "main",
+    "display_name": "Parakeet TDT 0.6B Japanese",
+    "files_per_sec": 189.57924493053073,
+    "model_id": "parakeet-tdt-ctc-0.6b-ja",
+    "peak_vram_mib_nvidia_smi": 5629.0,
+    "precision": "bf16_autocast",
+    "rtf": 0.0004028430298245112,
+    "runs": 18,
+    "runtime": "NVIDIA NeMo"
+  },
+  {
+    "audio_hours_per_hour": 939.18039529146,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 64,
+    "comparison_scope": "main",
+    "display_name": "Nemotron offline / Transformers",
+    "files_per_sec": 71.72584300767106,
+    "model_id": "nemotron-3.5-asr-offline-transformers",
+    "peak_vram_mib_nvidia_smi": 18467.0,
+    "precision": "bf16_autocast",
+    "rtf": 0.0010647581710749676,
+    "runs": 18,
+    "runtime": "Transformers offline RNNT"
+  },
+  {
+    "audio_hours_per_hour": 573.6809569913769,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 64,
+    "comparison_scope": "streaming_reference",
+    "display_name": "Nemotron streaming / NeMo (ref.)",
+    "files_per_sec": 43.812403308189204,
+    "model_id": "nemotron-3.5-asr-streaming-0.6b",
+    "peak_vram_mib_nvidia_smi": 7301.0,
+    "precision": "bf16_autocast",
+    "rtf": 0.0017431291518624195,
+    "runs": 18,
+    "runtime": "NVIDIA NeMo"
+  },
+  {
+    "audio_hours_per_hour": 457.3000765116381,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 64,
+    "comparison_scope": "main",
+    "display_name": "Kotoba-Whisper v2.2",
+    "files_per_sec": 34.92431662725528,
+    "model_id": "kotoba-whisper-v2.2",
+    "peak_vram_mib_nvidia_smi": 6661.0,
+    "precision": "float16",
+    "rtf": 0.0021867479394015593,
+    "runs": 18,
+    "runtime": "Transformers"
+  },
+  {
+    "audio_hours_per_hour": 308.83747806448383,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 32,
+    "comparison_scope": "main",
+    "display_name": "ReazonSpeech K2 v2",
+    "files_per_sec": 23.58612741236343,
+    "model_id": "reazonspeech-k2-v2",
+    "peak_vram_mib_nvidia_smi": 22661.0,
+    "precision": "float32",
+    "rtf": 0.003237948989439697,
+    "runs": 18,
+    "runtime": "sherpa-onnx CUDA"
+  },
+  {
+    "audio_hours_per_hour": 210.30913125962246,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 64,
+    "comparison_scope": "main",
+    "display_name": "Whisper large-v3-turbo",
+    "files_per_sec": 16.06145082183716,
+    "model_id": "faster-whisper-large-v3-turbo",
+    "peak_vram_mib_nvidia_smi": 11369.0,
+    "precision": "float16",
+    "rtf": 0.0047549052863782686,
+    "runs": 18,
+    "runtime": "faster-whisper/CTranslate2"
+  },
+  {
+    "audio_hours_per_hour": 129.64837436327505,
+    "batch_sizes": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "best_batch_runs": 3,
+    "best_batch_size": 64,
+    "comparison_scope": "main",
+    "display_name": "Whisper large-v3",
+    "files_per_sec": 9.90133417648075,
+    "model_id": "faster-whisper-large-v3",
+    "peak_vram_mib_nvidia_smi": 20617.0,
+    "precision": "float16",
+    "rtf": 0.00771317037264191,
+    "runs": 18,
+    "runtime": "faster-whisper/CTranslate2"
+  }
+]

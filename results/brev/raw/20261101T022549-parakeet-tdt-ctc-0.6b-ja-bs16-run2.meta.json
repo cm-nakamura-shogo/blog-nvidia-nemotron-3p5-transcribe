@@ -1,0 +1,74 @@
+{
+  "accuracy": {
+    "empty_output_rate": 0.0,
+    "exact_match_rate": 0.36,
+    "files": 650,
+    "normalized_cer": 0.05908478314138692,
+    "normalized_cer_ge_10pct": {
+      "count": 105,
+      "rate": 0.16153846153846155
+    },
+    "normalized_cer_ge_20pct": {
+      "count": 43,
+      "rate": 0.06615384615384616
+    },
+    "normalized_cer_ge_50pct": {
+      "count": 4,
+      "rate": 0.006153846153846154
+    },
+    "normalized_counts": {
+      "deletions": 737,
+      "errors": 1929,
+      "hits": 31027,
+      "insertions": 308,
+      "reference_characters": 32648,
+      "substitutions": 884
+    },
+    "raw_cer": 0.0939933577645442,
+    "raw_counts": {
+      "deletions": 1743,
+      "errors": 3283,
+      "hits": 32002,
+      "insertions": 357,
+      "reference_characters": 34928,
+      "substitutions": 1183
+    },
+    "suspicious_repetition_count": 0,
+    "suspicious_repetition_rate": 0.0
+  },
+  "audio_hours_per_hour": 2412.119492137456,
+  "batch_order": "bucket",
+  "batch_size": 16,
+  "comparison_scope": "main",
+  "decoder_type": "rnnt",
+  "decoding_strategy": "greedy_batch",
+  "end_to_end_elapsed_sec": 3.5284819129992684,
+  "experiment_id": "20261101T022549-parakeet-tdt-ctc-0.6b-ja-bs16-run2",
+  "files_per_sec": 184.21519963169916,
+  "fleurs_training_overlap_disclosed": false,
+  "gpu_inference_elapsed_sec": 3.521648985994034,
+  "hub_model_id": "nvidia/parakeet-tdt_ctc-0.6b-ja",
+  "latency": null,
+  "model_id": "parakeet-tdt-ctc-0.6b-ja",
+  "model_load_sec": 10.761570472999665,
+  "model_revision": "44edb27eea9317daf89333e75eb830db4b1cc298",
+  "model_weight_dtype": "float32",
+  "peak_allocated_mib_torch": 3376.97509765625,
+  "peak_reserved_mib_torch": 3560.0,
+  "peak_vram_mib_nvidia_smi": 4649,
+  "precision": "bf16_autocast",
+  "predictions": "results/raw/20261101T022549-parakeet-tdt-ctc-0.6b-ja-bs16-run2.jsonl",
+  "repeat": 2,
+  "rtf": 0.00041457315993656194,
+  "runtime": "NVIDIA NeMo",
+  "runtime_versions": {
+    "nemo-toolkit": "3.1.0+e0a284b",
+    "torch": "2.11.0+cu129"
+  },
+  "total_audio_sec": 8511.119999999994,
+  "total_files": 650,
+  "transducer_type": "tdt",
+  "vram_baseline_mib_nvidia_smi": 3689,
+  "vram_monitor": "NVML",
+  "warmup_samples": 8
+}

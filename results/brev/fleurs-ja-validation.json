@@ -1,0 +1,16 @@
+{
+  "actual_total_audio_sec": 8511.119999999997,
+  "declared_total_audio_sec": 8511.119999999997,
+  "existing_audio_files": 650,
+  "expected_files": 650,
+  "expected_sample_rate": 16000,
+  "header_mismatches": [],
+  "manifest": "/home/ubuntu/workspace/asr-benchmark/manifests/fleurs-ja_jp-test.jsonl",
+  "manifest_sha256": "899dfff9c15cc8f7300ee7bf64700eb9803561354dc4c45c9352d1d5630be3cd",
+  "missing_paths": [],
+  "passed": true,
+  "rows": 650,
+  "unique_audio_paths": 650,
+  "unique_audio_sha256": 650,
+  "unique_sample_ids": 650
+}
