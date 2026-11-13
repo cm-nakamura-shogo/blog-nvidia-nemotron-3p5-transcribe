@@ -2,7 +2,7 @@
 
 [NVIDIA Nemotron 3.5 Transcribe](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B)（2026-10-28公開）を、
 NVIDIA L40S 1基で日本語の音声に対して検証したコードと集計結果です。
-DevelopersIOの記事「Nemotron 3.5 Transcribeを日本語で試したら、専門用語の認識精度がプロンプトだけで31%から67%に上がった」で使用しました。
+DevelopersIOの記事「プロンプトだけでカスタマイズできる！？Nemotron 3.5 Transcribeに専門用語リストを渡したら、日本語での認識精度が31%から67%に上がった」で使用しました。
 
 以前の[日本語ASR比較ベンチマーク](#日本語asr比較ベンチマーク)のハーネスに、vLLMのOpenAI互換サーバーへリクエストを送るランナーを追加しています。
 
