@@ -1,26 +1,26 @@
 {
   "fleurs_no_punctuation": {
     "files": 650,
-    "normalized_cer": 0.056083067875520705,
-    "outputs_with_digits": 58,
-    "outputs_with_kanji_numerals": 197,
-    "outputs_without_punctuation": 645,
-    "punctuation_marks": 5
+    "normalized_cer": 0.053448909580985055,
+    "outputs_with_digits": 72,
+    "outputs_with_kanji_numerals": 183,
+    "outputs_without_punctuation": 649,
+    "punctuation_marks": 1
   },
   "fleurs_numbers_spoken": {
     "files": 650,
-    "normalized_cer": 0.04162582700318549,
-    "outputs_with_digits": 167,
-    "outputs_with_kanji_numerals": 99,
+    "normalized_cer": 0.043432982112227396,
+    "outputs_with_digits": 152,
+    "outputs_with_kanji_numerals": 115,
     "outputs_without_punctuation": 0,
-    "punctuation_marks": 1895
+    "punctuation_marks": 1878
   },
   "fleurs_numbers_written": {
     "files": 650,
-    "normalized_cer": 0.042575349179122764,
-    "outputs_with_digits": 159,
-    "outputs_with_kanji_numerals": 106,
-    "outputs_without_punctuation": 1,
-    "punctuation_marks": 1900
+    "normalized_cer": 0.04180960548885077,
+    "outputs_with_digits": 162,
+    "outputs_with_kanji_numerals": 99,
+    "outputs_without_punctuation": 0,
+    "punctuation_marks": 1912
   }
 }

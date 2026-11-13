@@ -22,7 +22,9 @@ def main() -> None:
     parser.add_argument("--config", type=Path, required=True, help="Server/model config YAML")
     parser.add_argument("--probes", type=Path, required=True, help="Prompt variants YAML")
     parser.add_argument("--only", nargs="+", help="Probe names to run")
-    parser.add_argument("--concurrency", type=int, default=16)
+    # 同時に複数送ると、GPU上でまとめて処理される組み合わせが毎回変わり、出力が数件揺れる。
+    # 再現性のため、既定は1件ずつ送る。
+    parser.add_argument("--concurrency", type=int, default=1)
     parser.add_argument("--limit", type=int)
     parser.add_argument("--output-dir", type=Path, default=Path("results/probes"))
     args = parser.parse_args()

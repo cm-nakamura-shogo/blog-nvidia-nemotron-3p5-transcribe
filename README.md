@@ -18,28 +18,31 @@ DevelopersIOの記事「Nemotron 3.5 Transcribeを日本語で試したら、専
 
 - モデルカードはFLEURSを学習データに明記しているため、FLEURSの精度は汎化性能として解釈しません。
 - モデルカードの数値はBF16版です。FP8版は文字起こしの誤り率が相対で平均1.0%高いと記載されています。
-- L40SではMTP（投機的デコード）を使えないため、処理速度はほかのモデルと比較していません。`configs/matrix-transcribe.yaml`で同時リクエスト数1〜64とParakeetの再測定も行っていますが、記事では1件ずつ処理したときの値だけを参考として載せています。
+- L40SではMTP（投機的デコード）を使えないため、処理速度はほかのモデルと比較していません。記事では、1件ずつ処理したときの処理時間だけを参考として載せています。
+- 同時に複数のリクエストを送ると、temperature 0でも出力が実行ごとに数件変わりました（60文中4〜5文）。1件ずつ送ると毎回同じ出力になったため、すべての計測を1件ずつで行っています（`results/brev/probes-concurrent16/`、`probes-rep2/`、`probes-rep3/`、`probes-c1a/`、`probes-c1b/`はその確認の結果です）。
 - 専門用語リストは、ファインチューニング記事のPhrase Boostingと同じ25語です（台本の対象語のうちCTCとDGXは含みません）。
 - 台本（`data/discovery/`）はファインチューニング記事のものです。録音（`work/recordings/discovery/`）はリポジトリに含めません。
 
-## L40S向けの起動設定
+## L40S向けの変更
 
-vLLMの起動コマンド（`scripts/serve_nemotron_transcribe.sh`）は、モデルカードのFP8版の設定（RTX PRO 6000向け）から次の点を変えています。
+インストールと起動は、モデルカード（FP8版）の手順をできるだけそのまま使い、L40Sで動かすために必要な3か所だけを変えています。
+どの変更が必要かは、新しいBrevインスタンスで公式手順をそのまま実行し、失敗した箇所を1つずつ直して確かめました（記録は`verification/official-rerun.md`、各段階の起動スクリプトは`results/brev/official-serve/`）。
 
 | 変更 | 理由 |
 | --- | --- |
-| `PATH`に仮想環境の`bin`とCUDA 13の`bin`を追加 | FlashInferのJITコンパイルがninjaとnvccを`PATH`から探すため |
-| `LD_LIBRARY_PATH`に`/usr/local/cuda-13.0/compat`を追加 | Brevの`l40s-48gb.1x`はドライバ565（CUDA 12.7）で、vLLM 0.32.0のtorch 2.13.0+cu130を動かすためにforward compatibilityパッケージを使う |
-| `--mamba-backend`を`flashinfer`から`triton`に変更 | FlashInfer 0.7.0.post1のReplaySSMカーネル（`checkpointing_ssu`）がsm_90専用命令（`griddepcontrol`）をガードなしで含み、L40S（sm_89）ではJITコンパイルに失敗する |
-| MTPの投機的デコードを無効化 | Mamba-2の投機的デコードはFlashInferバックエンドが必須のため |
-| 1リクエストの最大音声長を600秒に短縮 | 検証に使う音声は最長でも数十秒のため |
+| `cuda-compat-13-0`を入れ、`LD_LIBRARY_PATH`に`/usr/local/cuda-13.0/compat`を追加 | Brevの`l40s-48gb.1x`はドライバ565（CUDA 12.7）で、vLLM 0.32.0が入れるtorch 2.13.0+cu130が動かないため。forward compatibilityパッケージでCUDA 13のランタイムを使う |
+| `--mamba-backend`を`flashinfer`から`triton`に変更 | FlashInfer 0.7.0.post1のReplaySSMカーネル（`checkpointing_ssu`）がsm_90専用命令（`griddepcontrol`）をGPUの世代による分岐なしで含み、L40S（sm_89）では最初のリクエストでJITコンパイルに失敗するため |
+| MTPの投機的デコード（`--speculative-config`）を削除 | vLLMが`Mamba2 ReplaySSM speculative decoding requires --mamba-backend flashinfer`として拒否するため |
 
-CUDA 13の互換パッケージと開発用パッケージ（`cuda-compat-13-0`、`cuda-minimal-build-13-0`、`cuda-libraries-dev-13-0`）は`scripts/setup_nemotron_transcribe.sh`で導入します。
+`--use-replayssm`だけを外してFlashInferとMTPを残す構成も試しましたが、FlashInferの別のカーネル（`selective_state_update`）でデータ型のエラーになりました。
+
+それ以外（`source .venv/bin/activate`、`PATH=/usr/local/cuda/bin`、`VLLM_DISABLED_KERNELS`、`--gpu-memory-utilization 0.85`、最大音声長1時間）は、モデルカードのままです。
+インストールは`scripts/setup_nemotron_transcribe.sh`、起動は`scripts/serve_nemotron_transcribe.sh`です。
 
 ## 実行（Brev L40S）
 
 ```bash
-export ASR_BENCHMARK_BREV_WORKSPACE=cm-nakamura-nemotron-transcribe
+export ASR_BENCHMARK_BREV_WORKSPACE=cm-nakamura-nemotron-transcribe-2
 bash scripts/host/create_workspace.sh
 bash scripts/host/sync_to_brev.sh
 # Brev内
@@ -48,16 +51,18 @@ bash scripts/setup_nemotron_transcribe.sh
 bash scripts/brev/run_transcribe_all.sh
 ```
 
-`run_transcribe_all.sh`は、FLEURSの準備、vLLMサーバーの起動、精度と速度の測定、プロンプトのプローブと採点、Parakeetの再測定を順に実行します。
+`run_transcribe_all.sh`は、FLEURSの準備、vLLMサーバーの起動、認識精度の測定、プロンプトを変えた実行と採点を順に実行します。
 
 ## 集計結果
 
-2026-11-01に測定した結果を`results/brev/`に置いています。
+2026-11-13に測定した結果を`results/brev/`に置いています。
 
 | パス | 内容 |
 | --- | --- |
-| `results/brev/accuracy/`、`results/brev/raw/` | 各runのメタデータ（`*.meta.json`） |
-| `results/brev/probes/` | プローブごとのメタデータ、専門用語の評価（`*-term-summary.json`、`*-term-details.csv`）、表記の集計（`format-summary.json`）、翻訳のスコア（`*-score.json`） |
+| `results/brev/accuracy/` | 認識精度の測定のメタデータ（`*.meta.json`） |
+| `results/brev/probes/` | プロンプトの条件ごとのメタデータ、専門用語の評価（`*-term-summary.json`、`*-term-details.csv`）、表記の集計（`format-summary.json`）、翻訳のスコア（`*-score.json`） |
+| `results/brev/environment/` | 実行環境のパッケージ一覧（`pip-freeze-official-nemo-speech.txt`がvLLMの環境） |
+| `results/brev/official-serve/` | 公式手順を段階的に試したときのインストールと起動のスクリプト |
 
 発話ごとの認識結果（JSONL）とログは、容量と再配布範囲を考慮してリポジトリに含めていません。
 

@@ -1,10 +1,10 @@
 {
   "sentences": 60,
   "target_sentences": 54,
-  "strict_hits": 38,
-  "strict_recall": 0.7037037037037037,
-  "loose_hits": 38,
-  "loose_recall": 0.7037037037037037,
+  "strict_hits": 37,
+  "strict_recall": 0.6851851851851852,
+  "loose_hits": 37,
+  "loose_recall": 0.6851851851851852,
   "negative_controls": 6,
   "controls_with_target_insertion": 0,
   "control_false_insertion_rate": 0.0,
@@ -12,11 +12,13 @@
   "target_other_term_insertion_rate": 0.018518518518518517,
   "failed_terms_strict": [
     "CTC",
+    "CUDA",
     "Cache-Aware Streaming",
     "FLEURS",
     "Lhotse",
     "NVLink",
     "NeMo",
+    "Nemotron",
     "Riva",
     "SpecAugment",
     "TensorRT",
@@ -42,10 +44,10 @@
     {
       "target_term": "CUDA",
       "attempts": 2,
-      "strict_hits": 2,
-      "loose_hits": 2,
-      "strict_recall": 1.0,
-      "loose_recall": 1.0
+      "strict_hits": 1,
+      "loose_hits": 1,
+      "strict_recall": 0.5,
+      "loose_recall": 0.5
     },
     {
       "target_term": "Cache-Aware Streaming",
@@ -122,10 +124,10 @@
     {
       "target_term": "NVLink",
       "attempts": 2,
-      "strict_hits": 0,
-      "loose_hits": 0,
-      "strict_recall": 0.0,
-      "loose_recall": 0.0
+      "strict_hits": 1,
+      "loose_hits": 1,
+      "strict_recall": 0.5,
+      "loose_recall": 0.5
     },
     {
       "target_term": "NeMo",
@@ -138,10 +140,10 @@
     {
       "target_term": "Nemotron",
       "attempts": 2,
-      "strict_hits": 2,
-      "loose_hits": 2,
-      "strict_recall": 1.0,
-      "loose_recall": 1.0
+      "strict_hits": 1,
+      "loose_hits": 1,
+      "strict_recall": 0.5,
+      "loose_recall": 0.5
     },
     {
       "target_term": "Parakeet",

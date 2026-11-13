@@ -1,0 +1,9 @@
+{
+  "bleu": 30.119254737953504,
+  "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:ja-mecab-0.996-IPA|smooth:exp|version:2.5.1",
+  "chrf": 37.489164282318214,
+  "files": 647,
+  "predictions": "results/probes/st_en_to_ja.jsonl",
+  "scored_files": 592,
+  "target_lang": "ja"
+}

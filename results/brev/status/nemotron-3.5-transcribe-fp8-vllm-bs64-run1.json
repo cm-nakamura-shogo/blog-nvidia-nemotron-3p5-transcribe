@@ -1,8 +1,0 @@
-{
-  "batch_size": 64,
-  "elapsed_sec_including_model_load": 48.16732430458069,
-  "log": "results/status/logs/nemotron-3.5-transcribe-fp8-vllm-bs64-run1.log",
-  "model_id": "nemotron-3.5-transcribe-fp8-vllm",
-  "repeat": 1,
-  "status": "completed"
-}

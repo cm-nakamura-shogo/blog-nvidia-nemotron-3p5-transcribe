@@ -23,3 +23,6 @@ results/brev/smoke*/
 results/brev/status*/logs/
 results/brev/aggregated/
 results/brev/status-smoke*/
+
+# 前回（公式手順から外れた環境）の結果のローカル退避先
+results/brev-previous/

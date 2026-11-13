@@ -1,0 +1,26 @@
+{
+  "fleurs_no_punctuation": {
+    "files": 650,
+    "normalized_cer": 0.05384709629992649,
+    "outputs_with_digits": 74,
+    "outputs_with_kanji_numerals": 183,
+    "outputs_without_punctuation": 649,
+    "punctuation_marks": 1
+  },
+  "fleurs_numbers_spoken": {
+    "files": 650,
+    "normalized_cer": 0.04226905170301397,
+    "outputs_with_digits": 158,
+    "outputs_with_kanji_numerals": 110,
+    "outputs_without_punctuation": 0,
+    "punctuation_marks": 1879
+  },
+  "fleurs_numbers_written": {
+    "files": 650,
+    "normalized_cer": 0.042789757412398925,
+    "outputs_with_digits": 167,
+    "outputs_with_kanji_numerals": 99,
+    "outputs_without_punctuation": 0,
+    "punctuation_marks": 1901
+  }
+}

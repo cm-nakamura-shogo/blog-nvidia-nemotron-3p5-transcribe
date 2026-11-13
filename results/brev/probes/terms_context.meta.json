@@ -1,6 +1,6 @@
 {
-  "concurrency": 16,
-  "elapsed_sec": 4.209546911999496,
+  "concurrency": 1,
+  "elapsed_sec": 15.2119944140004,
   "empty_outputs": 0,
   "files": 60,
   "finish_reason_length": 0,

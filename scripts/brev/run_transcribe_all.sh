@@ -17,26 +17,13 @@ for lang in ja_jp en_us; do
   fi
 done
 
-# 2. vLLMサーバー起動（コールドスタート時間はログに残る）
-bash scripts/brev/start_transcribe_server_background.sh | tee results/nemotron-transcribe-cold-start.txt
+# 2. vLLMサーバー起動
+bash scripts/brev/start_transcribe_server_background.sh
 
-# 3. スモーク → 精度（BS1）→ 性能（BS1〜64 × 3回）
-"${PYTHON_BIN}" scripts/run_matrix.py --matrix configs/matrix-transcribe.yaml \
-  --only nemotron-3.5-transcribe-fp8-vllm --batch-sizes 1 4 --repeats 1 --limit 10 \
-  --output-dir results/smoke-transcribe --status-dir results/status-smoke-transcribe --resume
+# 3. 認識精度（1件ずつ、650件）
 "${PYTHON_BIN}" scripts/run_matrix.py --matrix configs/matrix-transcribe.yaml \
   --only nemotron-3.5-transcribe-fp8-vllm --batch-sizes 1 --repeats 1 \
   --output-dir results/accuracy --status-dir results/status-accuracy --resume
-"${PYTHON_BIN}" scripts/run_matrix.py --matrix configs/matrix-transcribe.yaml \
-  --only nemotron-3.5-transcribe-fp8-vllm \
-  --output-dir results/raw --status-dir results/status --resume
 
-# 4. 翻訳・プロンプト制御
+# 4. プロンプトを変えた実行と採点（1件ずつ）
 bash scripts/brev/08_run_probes.sh
-
-# 5. Parakeetの再測定はGPUを空けてから行う
-kill "$(cat results/nemotron-transcribe-server.pid)" || true
-sleep 20
-"${PYTHON_BIN}" scripts/run_matrix.py --matrix configs/matrix-transcribe.yaml \
-  --only parakeet-tdt-ctc-0.6b-ja \
-  --output-dir results/raw --status-dir results/status --resume

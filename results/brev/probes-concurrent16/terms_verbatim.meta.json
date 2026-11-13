@@ -1,0 +1,14 @@
+{
+  "concurrency": 16,
+  "elapsed_sec": 7.266432137000265,
+  "empty_outputs": 0,
+  "files": 60,
+  "finish_reason_length": 0,
+  "hub_model_id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8",
+  "manifest": "data/discovery/discovery_manifest.jsonl",
+  "max_tokens": 1024,
+  "model_revision": "2b6209f89bec0da576d69183bfdabb3b6c05ade2",
+  "probe": "terms_verbatim",
+  "system_prompt": "",
+  "user_prompt": "Audio transcription. Language: as spoken. Wording: verbatim, including fillers and repetitions. Formatting: punctuation and capitalization. Output: transcript only."
+}

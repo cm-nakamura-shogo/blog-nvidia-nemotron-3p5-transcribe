@@ -1,8 +1,0 @@
-{
-  "batch_size": 64,
-  "elapsed_sec_including_model_load": 24.111704111099243,
-  "log": "results/status/logs/parakeet-tdt-ctc-0.6b-ja-bs64-run1.log",
-  "model_id": "parakeet-tdt-ctc-0.6b-ja",
-  "repeat": 1,
-  "status": "completed"
-}

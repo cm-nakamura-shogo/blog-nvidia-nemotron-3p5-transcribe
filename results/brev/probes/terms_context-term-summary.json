@@ -1,10 +1,10 @@
 {
   "sentences": 60,
   "target_sentences": 54,
-  "strict_hits": 38,
-  "strict_recall": 0.7037037037037037,
-  "loose_hits": 38,
-  "loose_recall": 0.7037037037037037,
+  "strict_hits": 36,
+  "strict_recall": 0.6666666666666666,
+  "loose_hits": 36,
+  "loose_recall": 0.6666666666666666,
   "negative_controls": 6,
   "controls_with_target_insertion": 0,
   "control_false_insertion_rate": 0.0,
@@ -13,6 +13,7 @@
   "failed_terms_strict": [
     "CTC",
     "Cache-Aware Streaming",
+    "Canary",
     "FLEURS",
     "Lhotse",
     "NVLink",
@@ -58,10 +59,10 @@
     {
       "target_term": "Canary",
       "attempts": 2,
-      "strict_hits": 2,
-      "loose_hits": 2,
-      "strict_recall": 1.0,
-      "loose_recall": 1.0
+      "strict_hits": 1,
+      "loose_hits": 1,
+      "strict_recall": 0.5,
+      "loose_recall": 0.5
     },
     {
       "target_term": "DGX",
@@ -138,10 +139,10 @@
     {
       "target_term": "Nemotron",
       "attempts": 2,
-      "strict_hits": 1,
-      "loose_hits": 1,
-      "strict_recall": 0.5,
-      "loose_recall": 0.5
+      "strict_hits": 0,
+      "loose_hits": 0,
+      "strict_recall": 0.0,
+      "loose_recall": 0.0
     },
     {
       "target_term": "Parakeet",
